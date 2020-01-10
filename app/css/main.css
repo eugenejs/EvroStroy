@@ -9,6 +9,11 @@
   src: url(..//fonts/Roboto-Regular.woff2); }
 
 @font-face {
+  font-family: 'Roboto Italic';
+  font-weight: 300;
+  src: url(..//fonts/Roboto-LightItalic.woff2); }
+
+@font-face {
   font-family: 'Roboto';
   font-weight: 500;
   src: url(..//fonts/Roboto-Medium.woff2); }
@@ -21,7 +26,7 @@
 body {
   position: relative;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.25;
   min-width: 320px;
   margin: 0; }
 
@@ -30,7 +35,7 @@ body {
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.25; }
+  margin: 0; }
 
 .h1 {
   font-size: 48px;
@@ -63,3 +68,16 @@ h1, h2, h3, h4, h5, h6 {
   .h5_uppercase {
     text-transform: uppercase;
     letter-spacing: 3px; }
+
+p {
+  margin: 0; }
+
+.p_italic {
+  font-family: 'Roboto Italic';
+  font-size: 26px;
+  font-weight: 300; }
+
+.p_small {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px; }
