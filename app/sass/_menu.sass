@@ -1,0 +1,90 @@
+ul
+	margin: 0
+	padding: 0
+
+li
+	list-style: none
+
+a
+	text-decoration: none
+	color: inherit
+
+.menu_wrapper
+	position: absolute
+	left: 0
+	right: 0
+	background: #ffffff
+
+.menu_fixed
+	position: fixed
+	top: 0
+
+.menu_visible
+	transform: translate(0, 0) !important
+
+.menu
+	display: flex
+	justify-content: space-between
+
+.logo
+	max-height: 100%
+	background: url(..//img/evro.svg) center / auto 100% no-repeat
+	width: 100px
+	margin: 10px 0
+
+.nav
+	&__list
+		white-space: nowrap
+	&__item
+		display: inline-block
+		&:not(:last-child)
+			margin-right: 75px
+	&__link
+		display: inline-block
+		padding: 30px 0
+		border-bottom: 5px solid rgba($accent, 0)
+		transition: border-color .3s, color .3s
+		font-weight: 500
+		&:hover
+			border-bottom: 5px solid rgba($accent, 1)
+
+.hamburger
+	display: none
+	position: fixed
+	top: 40px
+	left: 50px
+	z-index: 100
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+	background-color: #222222
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+	background-color: #222222
+
+.contacts
+	height: 40px
+	background: #888888
+
+@media (max-width: 992px)
+	.hamburger
+		display: block
+	.logo
+		display: none
+
+	.menu_wrapper
+		position: fixed
+		top: 0
+		height: 100vh
+		padding: 100px 0 0 40px
+		transform: translate(-100%, 0)
+		transition: transform .2s
+	.nav
+		&__list
+		&__item
+			display: block
+			&:not(:last-child)
+				margin-right: 0
+		&__link
+			width: 400px
+			font-size: 26px
+			&:hover
+				color: $accent
+				border-bottom: 5px solid rgba(0,0,0,0)
