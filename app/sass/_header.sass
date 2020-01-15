@@ -1,3 +1,53 @@
 .header
 	background: url(..//img/pepe.jpg) center / cover no-repeat
 	height: 5000px
+
+.contacts-wrapper
+	background: #F5F5F5
+
+.contacts
+	display: flex
+	justify-content: space-between
+	height: 50px
+	&__info
+		display: flex
+		align-items: center
+		white-space: nowrap
+	&__tel
+		margin-right: 50px
+	&__address
+	&__social
+		white-space: nowrap
+	&__icon
+		transition: .5s
+		cursor: pointer
+		color: #222222
+		font-size: 22px
+		line-height: 50px
+		&:not(:last-child)
+			margin-right: 15px
+	&__facebook
+		&:hover
+			color: darken($accent, 5)
+	&__twitter
+		&:hover
+			color: lighten($accent, 25)
+	&__instagram
+		background: linear-gradient(45deg, #7222C0,#C5256B, #D88A3F, #222222 60%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		background-size: 400%
+		background-position: 100%
+		&:hover
+			background-position: 0 0
+	&__google
+		&:hover
+			color: #DA4837
+
+.icon-phone, .icon-location
+	color: $accent
+	margin-right: 5px
+
+@media (max-width: 992px)
+	.contacts
+		display: none

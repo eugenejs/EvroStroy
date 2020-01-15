@@ -23,6 +23,81 @@
   font-weight: 600;
   src: url(..//fonts/Roboto-Bold.woff2); }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("..//fonts/icomoon.woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-people_alt:before {
+  content: "\e903"; }
+
+.icon-ruler:before {
+  content: "\e900"; }
+
+.icon-pencil:before {
+  content: "\e900"; }
+
+.icon-design:before {
+  content: "\e900"; }
+
+.icon-tools:before {
+  content: "\e902"; }
+
+.icon-chevron-right:before {
+  content: "\e904"; }
+
+.icon-chevron-left:before {
+  content: "\e905"; }
+
+.icon-chevron-up:before {
+  content: "\e906"; }
+
+.icon-mail:before {
+  content: "\e901"; }
+
+.icon-office:before {
+  content: "\e907"; }
+
+.icon-headphones:before {
+  content: "\e910"; }
+
+.icon-coin:before {
+  content: "\e93c"; }
+
+.icon-phone:before {
+  content: "\e942"; }
+
+.icon-location:before {
+  content: "\e947"; }
+
+.icon-search:before {
+  content: "\e986"; }
+
+.icon-google-plus:before {
+  content: "\ea8b"; }
+
+.icon-facebook:before {
+  content: "\ea90"; }
+
+.icon-instagram:before {
+  content: "\ea92"; }
+
+.icon-twitter:before {
+  content: "\ea96"; }
+
 body {
   position: relative;
   font-size: 16px;
@@ -155,10 +230,11 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.menu_wrapper {
+.menu-wrapper {
   position: absolute;
   left: 0;
   right: 0;
+  top: 50px;
   background: #ffffff; }
 
 .menu_fixed {
@@ -214,16 +290,12 @@ a {
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
   background-color: #222222; }
 
-.contacts {
-  height: 40px;
-  background: #888888; }
-
 @media (max-width: 992px) {
   .hamburger {
     display: block; }
   .logo {
     display: none; }
-  .menu_wrapper {
+  .menu-wrapper {
     position: fixed;
     top: 0;
     height: 100vh;
@@ -248,3 +320,58 @@ a {
 .header {
   background: url(..//img/pepe.jpg) center/cover no-repeat;
   height: 5000px; }
+
+.contacts-wrapper {
+  background: #F5F5F5; }
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 50px; }
+  .contacts__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    white-space: nowrap; }
+  .contacts__tel {
+    margin-right: 50px; }
+  .contacts__social {
+    white-space: nowrap; }
+  .contacts__icon {
+    -webkit-transition: .5s;
+    transition: .5s;
+    cursor: pointer;
+    color: #222222;
+    font-size: 22px;
+    line-height: 50px; }
+    .contacts__icon:not(:last-child) {
+      margin-right: 15px; }
+  .contacts__facebook:hover {
+    color: #015a9e; }
+  .contacts__twitter:hover {
+    color: #3aaafe; }
+  .contacts__instagram {
+    background: linear-gradient(45deg, #7222C0, #C5256B, #D88A3F, #222222 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 100%; }
+    .contacts__instagram:hover {
+      background-position: 0 0; }
+  .contacts__google:hover {
+    color: #DA4837; }
+
+.icon-phone, .icon-location {
+  color: #0169B7;
+  margin-right: 5px; }
+
+@media (max-width: 992px) {
+  .contacts {
+    display: none; } }
