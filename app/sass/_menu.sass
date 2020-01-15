@@ -15,6 +15,7 @@ a
 	right: 0
 	top: 50px
 	background: #ffffff
+	z-index: 100
 
 .menu_fixed
 	position: fixed
@@ -39,10 +40,10 @@ a
 	&__item
 		display: inline-block
 		&:not(:last-child)
-			margin-right: 75px
+			margin-right: 65px
 	&__link
 		display: inline-block
-		padding: 30px 0
+		padding: 30px 10px
 		border-bottom: 5px solid rgba($accent, 0)
 		transition: border-color .3s, color .3s
 		font-weight: 500
@@ -54,7 +55,7 @@ a
 	position: fixed
 	top: 40px
 	left: 50px
-	z-index: 100
+	z-index: 150
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
 	background-color: #222222
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
@@ -63,6 +64,8 @@ a
 @media (max-width: 992px)
 	.hamburger
 		display: block
+		top: 20px
+		left: 30px
 	.logo
 		display: none
 
