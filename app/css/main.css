@@ -535,3 +535,23 @@ a {
   height: 8px !important;
   padding-left: 30px;
   content: '' !important; }
+
+.provide-wrapper {
+  background: #666666;
+  color: #ffffff; }
+
+.provide {
+  width: 600px;
+  margin-left: auto;
+  padding: 200px 0; }
+  .provide__text {
+    font-size: 20px;
+    margin: 25px 0; }
+
+@media (max-width: 768px) {
+  .provide {
+    width: 100%; }
+    .provide__title {
+      font-size: 32px; }
+    .provide__text {
+      font-size: 18px; } }

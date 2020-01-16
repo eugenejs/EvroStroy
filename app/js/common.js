@@ -27,6 +27,7 @@ $( document ).ready(function() {
 
 	$('.services').slick({
 		dots: true,
+		arrows: false,
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 3,
