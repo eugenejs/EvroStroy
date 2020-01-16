@@ -138,9 +138,10 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px; }
 
 .h4 {
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 1px;
-  font-weight: 500; }
+  font-weight: 500;
+  white-space: nowrap; }
 
 .h5 {
   font-size: 16px; }
@@ -164,7 +165,8 @@ p {
 
 .p_small {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
+  color: #777777;
   letter-spacing: 1px; }
 
 button, input {
@@ -423,3 +425,55 @@ a {
     -ms-flex-align: center;
     align-items: center;
     text-align: center; } }
+
+.about-wrapper {
+  background: #F5F5F5; }
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #333333;
+  padding: 80px 0 40px; }
+
+.about-item {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 400px;
+  padding: 0 10px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0 40px; }
+  .about-item__icon {
+    margin-right: 20px;
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 20px #e6e6e6;
+    box-shadow: 0 0 20px #e6e6e6;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 26px;
+    height: 80px;
+    min-width: 80px;
+    width: 80px;
+    line-height: 80px; }
+  .about-item__title {
+    margin-bottom: 10px; }
+
+@media (max-width: 992px) {
+  .about-item {
+    width: 100%;
+    padding: 0 20%;
+    margin-bottom: 50px; } }
+
+@media (max-width: 768px) {
+  .about-item {
+    padding: 0 5%; } }
