@@ -25,6 +25,19 @@ $( document ).ready(function() {
 		swipe: false
 	});
 
+	$('.clients__team').slick({
+		dots: true,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear',
+		arrows: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		touchMove: false,
+		swipe: false
+	});
+
 	$('.services').slick({
 		dots: true,
 		arrows: false,

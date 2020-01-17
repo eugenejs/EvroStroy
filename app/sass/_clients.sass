@@ -1,0 +1,73 @@
+.clients-wrapper
+	background: #F5F5F5
+
+.clients
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	padding: 75px 0
+	&__list
+		width: 50%
+		display: grid
+		grid-template-columns: 1fr 1fr
+		padding: 35px
+		background: #ffffff
+		border-radius: 10px
+	&__item
+		$padding: 30px
+		height: 125px
+		&:nth-child(odd)
+			border-right: 1px solid #e9e9e9
+			padding-right: $padding
+		&:nth-child(even)
+			padding-left: $padding
+		&:nth-last-child(n+3)
+			border-bottom: 1px solid #e9e9e9
+			padding-bottom: $padding
+		&:nth-child(n+3)
+			padding-top: $padding
+	&__logo
+		background: #555555
+		height: 100%
+		width: 100%
+
+.clients
+	&__content
+		width: 40%
+		padding-bottom: 75px
+	&__title
+		white-space: nowrap
+		margin-bottom: 35px
+	&__desc
+		margin-bottom: 35px
+		width: 80%
+		min-width: 350px
+	&__person
+	&__name
+		margin-bottom: 10px
+	&__position
+		color: $accent
+		margin-bottom: 35px
+
+.clients
+	.slick-dots
+		text-align: left
+		$size: 80px
+		li
+			width: $size
+		button::before
+			background: darken(#ffffff, 60)
+			height: $size !important
+			padding-left: 60px
+			border-radius: 50%
+			content: '' !important
+
+@media (max-width: 992px)
+	.clients
+		flex-wrap: wrap
+		&__list
+			width: 80%
+			margin: 0 auto 50px
+		&__content
+			width: 80%
+			margin: 0 auto

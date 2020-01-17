@@ -1,13 +1,23 @@
-.services .slick-slide div
-	text-align: center
+.services-wrapper
+	padding-bottom: 25px
+	.services .slick-slide div
+		text-align: center
 
-.slick-track
-	display: flex
-	padding-bottom: 75px
+	.slick-track
+		display: flex
+		padding-bottom: 75px
 
-.slick-track .slick-slide
-	height: auto
-	outline: none
+	.slick-track .slick-slide
+		height: auto
+		outline: none
+	.slick-dots
+		li
+			width: 50px
+		button::before
+			background: darken($accent, 10)
+			height: 8px !important
+			padding-left: 30px
+			content: '' !important
 
 .services
 	padding: 50px 0 0
@@ -44,12 +54,3 @@
 		margin: 20px 0
 	&__text
 		color: #666666
-
-.slick-dots
-	li
-		width: 50px
-	button::before
-		background: darken($accent, 10)
-		height: 8px !important
-		padding-left: 30px
-		content: '' !important
