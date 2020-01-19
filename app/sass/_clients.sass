@@ -36,12 +36,11 @@
 		width: 40%
 		padding-bottom: 75px
 	&__title
-		white-space: nowrap
 		margin-bottom: 35px
 	&__desc
 		margin-bottom: 35px
 		width: 80%
-		min-width: 350px
+		min-width: 300px
 	&__person
 	&__name
 		margin-bottom: 10px
@@ -71,3 +70,20 @@
 		&__content
 			width: 80%
 			margin: 0 auto
+
+@media (max-width: 480px)
+	.clients
+		padding: 25px 0
+		&__content
+			width: 100%
+		&__item
+			height: 60px
+
+	.clients
+		.slick-dots
+			$size: 60px
+			li
+				width: $size
+			button::before
+				height: $size !important
+				padding-left: 40px
