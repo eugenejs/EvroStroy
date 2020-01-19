@@ -194,12 +194,12 @@ button {
     padding: 0;
     height: 65px;
     width: 75px;
-    border: 3px solid #222222;
+    border: 1px solid #222222;
     background: #ffffff;
     color: #222222; }
     .btn_square:hover {
       background: #0169B7;
-      border: 3px solid #0169B7;
+      border: 1px solid #0169B7;
       color: #ffffff; }
 
 .email {
@@ -738,3 +738,80 @@ a {
   .achivements__title {
     font-size: 14px;
     margin: 0 10px; } }
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 100px 0; }
+
+.team-desc {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .team-desc__title {
+    margin-bottom: 20px; }
+  .team-desc__subtitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0169B7;
+    margin-bottom: 20px; }
+  .team-desc__text {
+    color: #888888;
+    margin-bottom: 20px;
+    letter-spacing: 1px; }
+  .team-desc__buttons {
+    white-space: nowrap; }
+  .team-desc__btn {
+    margin-right: 15px; }
+
+.team-people {
+  width: 66%; }
+  .team-people__item {
+    text-align: center; }
+  .team-people__photo {
+    width: calc(100% - 20px);
+    padding-bottom: 100%;
+    background: #666666;
+    margin: 0 auto; }
+
+@media (max-width: 992px) {
+  .team-desc__btn {
+    margin-right: 8px; } }
+
+@media (max-width: 768px) {
+  .team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 50px 0; }
+  .team-desc {
+    margin: 0 0 25px;
+    width: 100%;
+    text-align: center; }
+    .team-desc__btn {
+      margin-right: 15px; }
+  .team-people {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%; }
+    .team-people__item {
+      width: 50%;
+      margin: 0 auto 25px; } }

@@ -38,6 +38,43 @@ $( document ).ready(function() {
 		swipe: false
 	});
 
+	$('.team-people').slick({
+		dots: false,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		cssEase: 'linear',
+		arrows: true,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		prevArrow: $('.team-prev'),
+		nextArrow: $('.team-next'),
+		responsive: [
+		{
+		breakpoint: 992,
+		settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1,
+		}
+		},
+		{
+		breakpoint: 768,
+		settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1,
+		}
+		},
+		{
+		breakpoint: 568,
+		settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1,
+		}
+		},
+		]
+	});
+
 	$('.services').slick({
 		dots: true,
 		arrows: false,
@@ -81,6 +118,7 @@ $( document ).ready(function() {
 			}
 		}
 	});
+
 
 
 
