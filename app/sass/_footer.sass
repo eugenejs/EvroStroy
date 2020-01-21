@@ -1,0 +1,100 @@
+.footer-wrapper
+
+	background: #222222
+
+.footer
+	color: #ffffff
+	display: flex
+	justify-content: space-between
+	position: relative
+	padding: 25px 0
+
+.footer-links
+	&__title
+		margin-bottom: 50px
+	&__list
+		display: flex
+		margin-bottom: 50px
+	&__left
+		margin-right: 15px
+	&__link
+		padding: 4px 0
+		display: block
+		transition: .2s
+		&:hover
+			color: darken(#ffffff, 20)
+	&__social
+		display: flex
+	&__icon
+		font-size: 22px
+		background: rgba(#ffffff, .2)
+		padding: 10px
+		transition: .2s
+		&:not(:last-child)
+			margin-right: 12px
+		&:hover
+			background: rgba(#ffffff, .3)
+
+.footer-contacts
+	text-align: center
+	&__title
+		margin-bottom: 50px
+	&-icon
+		font-size: 18px
+		color: #ffffff
+		margin-right: 10px
+		background: rgba(#ffffff, .15)
+		padding: 12px
+		border-radius: 50%
+		cursor: pointer
+		&:hover
+			background: rgba(#ffffff, .3)
+	&__tel
+		font-size: 18px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 20px
+	&__mail
+		font-size: 18px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 30px
+
+.footer-map
+	width: 400px
+	border: 1px solid
+
+.footer-privacy
+	color: #666666
+	text-align: center
+	padding: 25px 0
+	&__link
+		transition: .2s
+		&:hover
+			color: #ffffff
+
+
+@media (max-width: 992px)
+	.footer
+		flex-direction: column
+		align-items: center
+
+	.footer-links
+		margin-bottom: 50px
+		&__title
+			text-align: center
+			margin-bottom: 15px
+		&__list
+			margin-bottom: 15px
+		&__social
+			justify-content: center
+
+	.footer-contacts
+		margin-bottom: 25px
+		&__title
+			margin-bottom: 20px
+	.footer-map
+		width: 90%
+		height: 325px

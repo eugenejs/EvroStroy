@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=89ed63fb-0607-4c36-bd7e-ada09af961a8&lang=ru_RU" type="text/javascript"></script>
 	<title>Document</title>
 </head>
 <body>
@@ -23,10 +24,10 @@
 				<a class="logo" href="/"></a>
 				<nav class="nav">
 					<ul class="nav__list">
-						<li class="nav__item"><a class="nav__link" href="">Главная</a></li>
-						<li class="nav__item"><a class="nav__link" href="">О нас</a></li>
-						<li class="nav__item"><a class="nav__link" href="">Проекты</a></li>
-						<li class="nav__item"><a class="nav__link" href="">Новости</a></li>
+						<li class="nav__item"><a class="nav__link" href="/">Главная</a></li>
+						<li class="nav__item"><a class="nav__link" href="/">О нас</a></li>
+						<li class="nav__item"><a class="nav__link" href="/">Проекты</a></li>
+						<li class="nav__item"><a class="nav__link" href="/">Новости</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -53,10 +54,10 @@
 					</a>
 				</div>
 				<div class="social contacts__social">
-					<i class="contacts__icon contacts__facebook icon-facebook"></i>
-					<i class="contacts__icon contacts__twitter icon-twitter"></i>
-					<i class="contacts__icon contacts__instagram icon-instagram"></i>
-					<i class="contacts__icon contacts__google icon-google-plus"></i>
+					<a href="/" onclick="return false;" class="contacts__icon contacts__facebook icon-facebook"></a>
+					<a href="/" onclick="return false;" class="contacts__icon contacts__twitter icon-twitter"></a>
+					<a href="/" onclick="return false;" class="contacts__icon contacts__instagram icon-instagram"></a>
+					<a href="/" onclick="return false;" class="contacts__icon contacts__google icon-google-plus"></a>
 				</div>
 			</div>
 		</div>
@@ -343,6 +344,48 @@
 			</div>
 		</div>
 	</div>
+
+	<footer class="footer-wrapper">
+		<div class="container">
+			<div class="footer">
+				<div class="footer-links">
+					<h5 class="h5 h5_uppercase footer-links__title">Ссылки</h5>
+					<div class="footer-links__list">
+						<ul class="footer-links__left">
+							<li><a href="" onclick="return false;" class="footer-links__link">Наша история</a></li>
+							<li><a href="" onclick="return false;" class="footer-links__link">FAQ</a></li>
+							<li><a href="" onclick="return false;" class="footer-links__link">Последние новости</a></li>
+						</ul>
+						<ul class="footer-links__right">
+							<li><a href="" onclick="return false;" class="footer-links__link">Наша команда</a></li>
+							<li><a href="" onclick="return false;" class="footer-links__link">Проекты</a></li>
+							<li><a href="" onclick="return false;" class="footer-links__link">Свяжитесь с Нами</a></li>
+						</ul>
+					</div>
+					<div class="footer-links__social">
+						<a href="" onclick="return false;" class="footer-links__icon icon-facebook"></a>
+						<a href="" onclick="return false;" class="footer-links__icon icon-twitter"></a>
+						<a href="" onclick="return false;" class="footer-links__icon icon-instagram"></a>
+						<a href="" onclick="return false;" class="footer-links__icon icon-google-plus"></a>
+					</div>
+				</div>
+				<div class="footer-contacts">
+					<h5 class="h5 h5_uppercase footer-contacts__title">Свяжитесь с нами</h5>
+					<div class="footer-contacts__tel">
+						<div class="footer-contacts-icon icon-phone"></div>
+						<a href="tel:+">+1 234-567-890</a>
+					</div>
+					<div class="footer-contacts__mail">
+						<div class="footer-contacts-icon icon-mail"></div>
+						<a href="mailto:@">mail@mail.mail</a>
+					</div>
+					<button class="btn btn_small footer-contacts__btn">Узнать цены</button>
+				</div>
+				<div id="map" class="footer-map"></div>
+			</div>
+			<div class="footer-privacy">C 2020 EvroStroy. <a href="" onclick="return false;" class="footer-privacy__link">Privacy policy</a></div>
+		</div>
+	</footer>
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
