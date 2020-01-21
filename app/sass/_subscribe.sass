@@ -1,0 +1,53 @@
+.subscribe-wrapper
+
+	background: #222222
+
+.subscribe
+	color: #ffffff
+	display: flex
+	padding: 100px 0
+	&__text
+		max-width: 200px
+		margin-right: 75px
+	&__title
+		margin-bottom: 20px
+	&__form
+		flex-grow: 1
+		display: flex
+		align-items: center
+	&__email
+		flex-grow: 1
+		padding: 29px 50px
+		background: rgba(#666666, .5)
+		margin-right: 25px
+		box-sizing: border-box
+		&::placeholder
+			color: #ffffff
+
+@media (max-width: 992px)
+	.subscribe
+		flex-direction: column
+		align-items: center
+		padding: 75px 0
+		&__text
+			max-width: 90%
+			text-align: center
+			margin: 0 0 25px
+		&__title
+			margin-bottom: 10px
+			font-size: 28px
+		&__desc
+			font-size: 18px
+		&__form
+			width: 90%
+
+@media (max-width: 768px)
+	.subscribe
+		padding: 50px 0
+		&__form
+			flex-direction: column
+		&__email
+			width: 100%
+			margin: 0 0 25px
+		&__btn
+			width: 100%

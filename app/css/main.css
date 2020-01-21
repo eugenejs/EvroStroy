@@ -184,7 +184,8 @@ button {
   color: #ffffff;
   letter-spacing: 2px;
   -webkit-transition: background, color, border, .2s;
-  transition: background, color, border, .2s; }
+  transition: background, color, border, .2s;
+  white-space: nowrap; }
   .btn:hover {
     background: #ffffff;
     color: #222222; }
@@ -815,3 +816,83 @@ a {
     .team-people__item {
       width: 50%;
       margin: 0 auto 25px; } }
+
+.subscribe-wrapper {
+  background: #222222; }
+
+.subscribe {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0; }
+  .subscribe__text {
+    max-width: 200px;
+    margin-right: 75px; }
+  .subscribe__title {
+    margin-bottom: 20px; }
+  .subscribe__form {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .subscribe__email {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 29px 50px;
+    background: rgba(102, 102, 102, 0.5);
+    margin-right: 25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .subscribe__email::-webkit-input-placeholder {
+      color: #ffffff; }
+    .subscribe__email::-moz-placeholder {
+      color: #ffffff; }
+    .subscribe__email:-ms-input-placeholder {
+      color: #ffffff; }
+    .subscribe__email::-ms-input-placeholder {
+      color: #ffffff; }
+    .subscribe__email::placeholder {
+      color: #ffffff; }
+
+@media (max-width: 992px) {
+  .subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 75px 0; }
+    .subscribe__text {
+      max-width: 90%;
+      text-align: center;
+      margin: 0 0 25px; }
+    .subscribe__title {
+      margin-bottom: 10px;
+      font-size: 28px; }
+    .subscribe__desc {
+      font-size: 18px; }
+    .subscribe__form {
+      width: 90%; } }
+
+@media (max-width: 768px) {
+  .subscribe {
+    padding: 50px 0; }
+    .subscribe__form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .subscribe__email {
+      width: 100%;
+      margin: 0 0 25px; }
+    .subscribe__btn {
+      width: 100%; } }
