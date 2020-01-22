@@ -5,7 +5,7 @@
 	display: flex
 	justify-content: space-between
 	align-items: flex-start
-	padding: 75px 0
+	padding: 100px 0
 	&__list
 		width: 50%
 		display: grid
@@ -27,10 +27,23 @@
 		&:nth-child(n+3)
 			padding-top: $padding
 	&__logo
-		background: #555555
 		height: 100%
 		width: 100%
-
+		transition: transform .2s
+		&:hover
+			transform: translate(15px, 0)
+		&_1
+			background: url(..//img/company1.jpg) center / cover
+		&_2
+			background: url(..//img/company2.jpg) center / cover
+		&_3
+			background: url(..//img/company3.jpg) center / cover
+		&_4
+			background: url(..//img/company4.jpg) center / cover
+		&_5
+			background: url(..//img/company5.jpg) center / cover
+		&_6
+			background: url(..//img/company6.jpg) center / cover
 .clients
 	&__content
 		width: 40%
@@ -41,7 +54,6 @@
 		margin-bottom: 35px
 		width: 80%
 		min-width: 300px
-	&__person
 	&__name
 		margin-bottom: 10px
 	&__position
@@ -60,6 +72,20 @@
 			padding-left: 60px
 			border-radius: 50%
 			content: '' !important
+	.slick-dots li button:before
+		opacity: .5
+		transition: opacity .2s
+	.slick-dots li button:focus:before, .slick-dots li button:hover:before
+		opacity: 1
+	#slick-slide-control10:before
+		background: url(..//img/clients1.jpg) center / cover
+	#slick-slide-control11:before
+		background: url(..//img/clients2.jpg) center / cover
+	#slick-slide-control12:before
+		background: url(..//img/clients3.jpg) center / cover
+	#slick-slide-control13:before
+		background: url(..//img/clients4.jpg) center / cover
+
 
 @media (max-width: 992px)
 	.clients

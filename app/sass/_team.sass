@@ -3,7 +3,7 @@
 .team
 	display: flex
 	justify-content: space-between
-	padding: 100px 0
+	padding: 125px 0
 
 .team-desc
 	width: 33%
@@ -34,8 +34,18 @@
 	&__photo
 		width: calc(100% - 20px)
 		padding-bottom: 100%
-		background: #666666
-		margin: 0 auto
+		margin: 0 auto 25px
+		&_1
+			background: url(..//img/team1.jpg) center / cover
+		&_2
+			background: url(..//img/team2.jpg) center / cover
+		&_3
+			background: url(..//img/team3.jpg) center / cover
+		&_4
+			background: url(..//img/team4.jpg) center / cover
+
+	.slick-slide
+		outline: none
 
 @media (max-width: 992px)
 	.team-desc
