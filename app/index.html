@@ -24,15 +24,17 @@
 				<a class="logo" href="/"></a>
 				<nav class="nav">
 					<ul class="nav__list">
-						<li class="nav__item"><a class="nav__link" href="/">Главная</a></li>
-						<li class="nav__item"><a class="nav__link" href="/">О нас</a></li>
-						<li class="nav__item"><a class="nav__link" href="/">Проекты</a></li>
-						<li class="nav__item"><a class="nav__link" href="/">Новости</a></li>
+						<li class="nav__item"><a class="nav__link" href="#home">Главная</a></li>
+						<li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+						<li class="nav__item"><a class="nav__link" href="#gallery">Проекты</a></li>
+						<li class="nav__item"><a class="nav__link" href="#subscribe">Новости</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 	</div>
+
+	<a href="#top" class="btn btn_top icon-chevron-up"></a>
 
 	<header class="header">
 		<div class="slider">
@@ -44,11 +46,11 @@
 		<div class="contacts-wrapper">
 			<div class="container contacts">
 				<div class="contacts__info">
-					<a href="tel: +" class="contacts__tel">
+					<a href="tel:+" class="contacts__tel">
 						<i class="icon-phone"></i>
 						<span>+1 234-567-890</span>
 					</a>
-					<a href="mailto: @" class="contacts__address">
+					<a href="mailto:@" class="contacts__address">
 						<i class="icon-location"></i>
 						<span>Шелепихинская наб., 7с5, Москва, Россия, 123290</span>
 					</a>
@@ -307,21 +309,45 @@
 						<div class="team-people__photo team-people__photo_1"></div>
 						<h4 class="h4 team-people__name">Марат Петрович</h4>
 						<p class="team-people__position">Менеджер по строительству</p>
+						<div class="team-people__contacts">
+							<a href="" onclick="return false;" class="team-people__social team-people__social_facebook icon-facebook"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_twitter icon-twitter"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_instagram icon-instagram"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_google-plus icon-google-plus"></a>
+						</div>
 					</div>
 					<div class="team-people__item">
 						<div class="team-people__photo team-people__photo_2"></div>
 						<h4 class="h4 team-people__name">Петр Маратович</h4>
 						<p class="team-people__position">Менеджер по строительству</p>
+						<div class="team-people__contacts">
+							<a href="" onclick="return false;" class="team-people__social team-people__social_facebook icon-facebook"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_twitter icon-twitter"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_instagram icon-instagram"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_google-plus icon-google-plus"></a>
+						</div>
 					</div>
 					<div class="team-people__item">
 						<div class="team-people__photo team-people__photo_3"></div>
 						<h4 class="h4 team-people__name">Ян Дмитриевич</h4>
 						<p class="team-people__position">Менеджер по строительству</p>
+						<div class="team-people__contacts">
+							<a href="" onclick="return false;" class="team-people__social team-people__social_facebook icon-facebook"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_twitter icon-twitter"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_instagram icon-instagram"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_google-plus icon-google-plus"></a>
+						</div>
 					</div>
 					<div class="team-people__item">
 						<div class="team-people__photo team-people__photo_4"></div>
 						<h4 class="h4 team-people__name">Тит Сергеевич</h4>
 						<p class="team-people__position">Менеджер по строительству</p>
+						<div class="team-people__contacts">
+							<a href="" onclick="return false;" class="team-people__social team-people__social_facebook icon-facebook"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_twitter icon-twitter"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_instagram icon-instagram"></a>
+							<a href="" onclick="return false;" class="team-people__social team-people__social_google-plus icon-google-plus"></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -371,14 +397,14 @@
 				</div>
 				<div class="footer-contacts">
 					<h5 class="h5 h5_uppercase footer-contacts__title">Свяжитесь с нами</h5>
-					<div class="footer-contacts__tel">
+					<a href="tel:+" class="footer-contacts__tel">
 						<div class="footer-contacts-icon icon-phone"></div>
-						<a href="tel:+">+1 234-567-890</a>
-					</div>
-					<div class="footer-contacts__mail">
+						<span>+1 234-567-890</span>
+					</a>
+					<a href="mailto:@" class="footer-contacts__mail">
 						<div class="footer-contacts-icon icon-mail"></div>
-						<a href="mailto:@">mail@mail.mail</a>
-					</div>
+						<span>mail@mail.mail</span>
+					</a>
 					<button class="btn btn_small footer-contacts__btn">Узнать цены</button>
 				</div>
 				<div id="map" class="footer-map"></div>

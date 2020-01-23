@@ -9,17 +9,14 @@
 	width: 33%
 	display: flex
 	flex-direction: column
-	justify-content: space-between
+	justify-content: space-around
 	&__title
-		margin-bottom: 20px
 	&__subtitle
 		font-size: 20px
 		text-transform: uppercase
 		color: $accent
-		margin-bottom: 20px
 	&__text
 		color: #888888
-		margin-bottom: 20px
 		letter-spacing: 1px
 	&__buttons
 		white-space: nowrap
@@ -29,8 +26,18 @@
 
 .team-people
 	width: 66%
+	position: relative
+	top: -5px
 	&__item
 		text-align: center
+		position: relative
+		top: 30px
+		transition: top .2s
+		&:hover
+			top: 0px
+			.team-people__social
+				top: 0
+
 	&__photo
 		width: calc(100% - 20px)
 		padding-bottom: 100%
@@ -43,9 +50,28 @@
 			background: url(..//img/team3.jpg) center / cover
 		&_4
 			background: url(..//img/team4.jpg) center / cover
-
+	&__position
+		margin-bottom: 15px
+	&__social
+		font-size: 18px
+		background: darken(#ffffff, 10)
+		padding: 5px
+		transition: background .2s, top .3s
+		position: relative
+		margin-right: 5px
+		&:hover
+			background: darken(#ffffff, 15)
+		&_facebook
+			top: 200px
+		&_twitter
+			top: 400px
+		&_instagram
+			top: 600px
+		&_google-plus
+			top: 800px
 	.slick-slide
 		outline: none
+
 
 @media (max-width: 992px)
 	.team-desc

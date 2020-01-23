@@ -24,13 +24,22 @@ button
 		padding: 0
 		height: 65px
 		width: 75px
-		border: 1px solid #222222
+		border: 1px solid #444444
 		background: #ffffff
 		color: #222222
 		&:hover
 			background: $accent
 			border: 1px solid $accent
 			color: #ffffff
+	&_top
+		position: fixed
+		bottom: -100px
+		right: 25px
+		z-index: 100
+		padding: 25px
+		border-radius: 50%
+		&:hover
+			box-shadow: 1px 1px 10px rgba(0,0,0,.2)
 
 
 .email

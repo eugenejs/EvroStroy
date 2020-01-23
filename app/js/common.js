@@ -109,7 +109,7 @@ $( document ).ready(function() {
 		gallery: {
 			enabled: true,
 			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			preload: [0,1]
 		},
 		image: {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
@@ -129,6 +129,37 @@ $( document ).ready(function() {
 
 
 
+	$("a[href='#top']").click(function() {
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
+		return false;
+	});
+
+	$("a[href='#home']").click(function() {
+		$("html, body").animate({ scrollTop: $(".header").offset().top - 200 }, "slow");
+		if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
+		return false;
+	});
+
+	$("a[href='#about']").click(function() {
+		$("html, body").animate({ scrollTop: $(".about").offset().top - 200 }, "slow");
+		if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
+		return false;
+	});
+
+	$("a[href='#gallery']").click(function() {
+		$("html, body").animate({ scrollTop: $(".gallery").offset().top - 200 }, "slow");
+		if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
+		return false;
+	});
+
+	$("a[href='#subscribe']").click(function() {
+		$("html, body").animate({ scrollTop: $(".subscribe").offset().top - 200 }, "slow");
+		if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
+		return false;
+	});
+
+
 
 });
 
@@ -139,6 +170,9 @@ $(window).scroll(function(){
 	if(st > $('.contacts').height()) $('.menu-wrapper').addClass('menu_fixed')
 	else $('.menu-wrapper').removeClass('menu_fixed')
 	if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
+
+	if($(this).scrollTop() > 500) $('.btn_top').css({'bottom' : '15px'})
+	else $('.btn_top').css({'bottom' : '-100px'})
 
 
 });

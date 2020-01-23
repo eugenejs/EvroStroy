@@ -197,13 +197,23 @@ button {
     padding: 0;
     height: 65px;
     width: 75px;
-    border: 1px solid #222222;
+    border: 1px solid #444444;
     background: #ffffff;
     color: #222222; }
     .btn_square:hover {
       background: #0169B7;
       border: 1px solid #0169B7;
       color: #ffffff; }
+  .btn_top {
+    position: fixed;
+    bottom: -100px;
+    right: 25px;
+    z-index: 100;
+    padding: 25px;
+    border-radius: 50%; }
+    .btn_top:hover {
+      -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2); }
 
 .email {
   font-size: 16px;
@@ -244,7 +254,9 @@ a {
   right: 0;
   top: 50px;
   background: #ffffff;
-  z-index: 100; }
+  z-index: 100;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); }
 
 .menu_fixed {
   position: fixed;
@@ -805,19 +817,14 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-  .team-desc__title {
-    margin-bottom: 20px; }
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
   .team-desc__subtitle {
     font-size: 20px;
     text-transform: uppercase;
-    color: #0169B7;
-    margin-bottom: 20px; }
+    color: #0169B7; }
   .team-desc__text {
     color: #888888;
-    margin-bottom: 20px;
     letter-spacing: 1px; }
   .team-desc__buttons {
     white-space: nowrap; }
@@ -825,9 +832,19 @@ a {
     margin-right: 15px; }
 
 .team-people {
-  width: 66%; }
+  width: 66%;
+  position: relative;
+  top: -5px; }
   .team-people__item {
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    top: 30px;
+    -webkit-transition: top .2s;
+    transition: top .2s; }
+    .team-people__item:hover {
+      top: 0px; }
+      .team-people__item:hover .team-people__social {
+        top: 0; }
   .team-people__photo {
     width: calc(100% - 20px);
     padding-bottom: 100%;
@@ -840,6 +857,26 @@ a {
       background: url(..//img/team3.jpg) center/cover; }
     .team-people__photo_4 {
       background: url(..//img/team4.jpg) center/cover; }
+  .team-people__position {
+    margin-bottom: 15px; }
+  .team-people__social {
+    font-size: 18px;
+    background: #e6e6e6;
+    padding: 5px;
+    -webkit-transition: background .2s, top .3s;
+    transition: background .2s, top .3s;
+    position: relative;
+    margin-right: 5px; }
+    .team-people__social:hover {
+      background: #d9d9d9; }
+    .team-people__social_facebook {
+      top: 200px; }
+    .team-people__social_twitter {
+      top: 400px; }
+    .team-people__social_instagram {
+      top: 600px; }
+    .team-people__social_google-plus {
+      top: 800px; }
   .team-people .slick-slide {
     outline: none; }
 
@@ -905,7 +942,8 @@ a {
     background: rgba(102, 102, 102, 0.5);
     margin-right: 25px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    color: #ffffff; }
     .subscribe__email::-webkit-input-placeholder {
       color: #ffffff; }
     .subscribe__email::-moz-placeholder {
@@ -1014,32 +1052,25 @@ a {
     background: rgba(255, 255, 255, 0.15);
     padding: 12px;
     border-radius: 50%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
     cursor: pointer; }
-    .footer-contacts-icon:hover {
+  .footer-contacts__tel, .footer-contacts__mail {
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .footer-contacts__tel:hover .footer-contacts-icon, .footer-contacts__mail:hover .footer-contacts-icon {
       background: rgba(255, 255, 255, 0.3); }
   .footer-contacts__tel {
-    font-size: 18px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     margin-bottom: 20px; }
   .footer-contacts__mail {
-    font-size: 18px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     margin-bottom: 30px; }
 
 .footer-map {
