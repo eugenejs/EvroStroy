@@ -735,7 +735,12 @@ a {
       margin: 0 auto 50px; }
     .clients__content {
       width: 80%;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      text-align: center; }
+    .clients__desc {
+      margin: 35px auto; }
+    .clients .slick-dots {
+      text-align: center; } }
 
 @media (max-width: 480px) {
   .clients {
