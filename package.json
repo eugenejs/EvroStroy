@@ -4,10 +4,9 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "normalize.css": "latest",
     "jquery": "latest",
-    "hamburgers": "latest",
     "magnific-popup": "^1.1.0",
+    "normalize.css": "latest",
     "slick-slider": "latest"
   },
   "devDependencies": {

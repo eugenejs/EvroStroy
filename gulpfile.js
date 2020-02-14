@@ -47,7 +47,7 @@ const pngquant = require('imagemin-pngquant')
 
 
   gulp.task('watch', function() {
-      gulp.watch('app/sass/*.sass', gulp.parallel('sass'));
+      gulp.watch('app/sass/**/*.sass', gulp.parallel('sass'));
       gulp.watch('app/*.html').on('change', browserSync.reload);
       gulp.watch('app/js/*.js').on('change', browserSync.reload);
   });
@@ -59,7 +59,6 @@ const pngquant = require('imagemin-pngquant')
 
       var csslibs = [
 		'app/libs/normalize.css/normalize.css',
-		'app/libs/hamburgers/dist/hamburgers.min.css',
 		'app/libs/magnific-popup/dist/magnific-popup.css',
 		'app/libs/slick-slider/slick/slick.css',
 		'app/libs/slick-slider/slick/slick-theme.css'

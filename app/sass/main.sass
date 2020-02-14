@@ -1,33 +1,19 @@
-@import '_mixins'
-@import '_fonts'
+@import base/_mixins
+@import base/_fonts
+@import base/_base
+@import base/_titles
+@import base/_par
 
-body
-	position: relative
-	font-size: 16px
-	line-height: 1.25
-	min-width: 320px
-	margin: 0
-	color: #222222
-*
-	font-family: 'Roboto'
-	font-weight: 400
-
-.container
-	max-width: 1200px
-	padding: 0 15px
-	margin: 0 auto
-
-@import '_titles'
-@import '_par'
-@import '_btns'
-@import '_menu'
-@import '_header'
-@import '_about'
-@import '_services'
-@import '_provide'
-@import '_gallery'
-@import '_clients'
-@import '_achivements'
-@import '_team'
-@import '_subscribe'
-@import '_footer'
+@import modules/_hamburger
+@import modules/_btns
+@import modules/_menu
+@import modules/_header
+@import modules/_about
+@import modules/_services
+@import modules/_provide
+@import modules/_gallery
+@import modules/_clients
+@import modules/_achivements
+@import modules/_team
+@import modules/_subscribe
+@import modules/_footer

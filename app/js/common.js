@@ -2,12 +2,11 @@ $( document ).ready(function() {
 
 	$('.hamburger').click(function(){
 
-		$(this).toggleClass('is-active')
+		$(this).toggleClass('hamburger-active')
 
-		if($(this).hasClass('is-active')) $('.menu-wrapper').addClass('menu_visible')
+		if($(this).hasClass('hamburger-active')) $('.menu-wrapper').addClass('menu_visible')
 		else $('.menu-wrapper').removeClass('menu_visible')
 	})
-
 
 
 	$('.slider').slick({
@@ -127,38 +126,31 @@ $( document ).ready(function() {
         });
     }
 
-
+	$('.nav__link').click(function() {
+		if($('.hamburger').hasClass('hamburger-active')) $('.hamburger').click()
+	});
 
 	$("a[href='#top']").click(function() {
 		$("html, body").animate({ scrollTop: 0 }, "slow");
-		if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
+		if($('.hamburger').hasClass('hamburger-active')) $('.hamburger').click()
 		return false;
 	});
 
 	$("a[href='#home']").click(function() {
 		$("html, body").animate({ scrollTop: $(".header").offset().top - 200 }, "slow");
-		if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
-		return false;
 	});
 
 	$("a[href='#about']").click(function() {
 		$("html, body").animate({ scrollTop: $(".about").offset().top - 200 }, "slow");
-		if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
-		return false;
 	});
 
 	$("a[href='#gallery']").click(function() {
 		$("html, body").animate({ scrollTop: $(".gallery").offset().top - 200 }, "slow");
-		if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
-		return false;
 	});
 
 	$("a[href='#subscribe']").click(function() {
 		$("html, body").animate({ scrollTop: $(".subscribe").offset().top - 200 }, "slow");
-		if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
-		return false;
 	});
-
 
 
 });
@@ -169,7 +161,7 @@ $(window).scroll(function(){
 
 	if(st > $('.contacts').height()) $('.menu-wrapper').addClass('menu_fixed')
 	else $('.menu-wrapper').removeClass('menu_fixed')
-	if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
+	if($('.hamburger').hasClass('hamburger-active')) $('.hamburger').click()
 
 	if($(this).scrollTop() > 500) $('.btn_top').css({'bottom' : '15px'})
 	else $('.btn_top').css({'bottom' : '-100px'})
@@ -179,6 +171,6 @@ $(window).scroll(function(){
 
 $(window).resize(function(){
 
-	if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
+	if($('.hamburger').hasClass('hamburger-active')) $('.hamburger').click()
 
 })

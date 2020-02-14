@@ -1,0 +1,48 @@
+// vars
+$ham-size: 31px
+$ham-height: 10
+$ham-top: 50px
+$ham-color: #222222
+$ham-active-color: #222222
+$transition-duration: .2s
+
+// styles
+.hamburger
+	cursor: pointer
+	top: $ham-top
+	display: none
+	position: fixed
+	top: 40px
+	left: 50px
+	z-index: 150
+	background: #fafafa
+	padding: 20px 15px
+	border-radius: 50%
+	box-shadow: 0 0 20px rgba(0,0,0,.2)
+	span, span:nth-child(2):after
+		display: block
+		background-color: $ham-color
+		transition: background-color $transition-duration, transform $transition-duration, top $transition-duration
+		height: $ham-size/$ham-height
+		width: $ham-size
+	span
+		position: relative
+		top: 0
+	span:not(:last-child)
+			margin-bottom: $ham-size/8
+	span:nth-child(2):after
+		content: ''
+
+.hamburger-active
+	span, span:nth-child(2):after
+		background: $ham-active-color
+	span:first-child
+		top: $ham-size/4
+		transform: scale(0)
+	span:nth-child(2)
+		transform: rotate(-45deg)
+	span:nth-child(2):after
+		transform: rotate(90deg)
+	span:last-child
+		top: -$ham-size/4
+		transform: scale(0)
